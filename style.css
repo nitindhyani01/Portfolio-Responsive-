@@ -104,6 +104,7 @@ nav .navlinks li a{
     max-width: 500px;
     display: flex;
     flex-direction: column;
+    text-align: justify;
 }
 .hero-text h5{
     color: #e5e5e5;
