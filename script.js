@@ -9,7 +9,7 @@ togglebtn.addEventListener("click", function () {
 
 var typed = new Typed(".input", {
   strings: ["Lerner","Developer","Curious"],
-  typedSpeed: 70,
-  backSpeed: 55,
+  typedSpeed: 5,
+  backSpeed: 95,
   loop: true
 })

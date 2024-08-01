@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="hero-header">
@@ -22,10 +25,15 @@
               <span></span>
             </div>
             <ul class="navlinks">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Resume</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Projects.html">Projects</a></li>
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/1TfyEdpqmJHgBk4LrZtGzSuHff6mxwBNO/view?usp=sharing"
+                  >Resume</a
+                >
+              </li>
+              <li><a href="contacts.html">Contact</a></li>
             </ul>
           </nav>
         </header>
@@ -36,27 +44,55 @@
           <div class="hero-text">
             <h5>Hi I'm <span class="input">Learner</span></h5>
             <h1>Nitin Dhyani</h1>
-            <p>Hi, I'm Nitin Dhyani, a third-year Computer Science student with a keen
-              interest in computers and technology. I'm always curious and eager to
-              learn, especially about new advancements and trends in the tech world.
-              Currently, I'm looking to expand my knowledge and skills in various
-              areas, including UI/UX design. I'm excited to dive deeper into the
-              subject and explore how to create intuitive and user-friendly digital
-              experiences.</p>
-              <div class="btn-group">
-                <a href="#" class="btn active">Download CV</a>
-                <a href="#" class="btn">Contact</a>
-              </div>
-              <div class="social">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-              </div>
+            <p>
+              Hi, I'm Nitin Dhyani, a third-year Computer Science student with a
+              keen interest in computers and technology. I'm always curious and
+              eager to learn, especially about new advancements and trends in
+              the tech world. Currently, I'm looking to expand my knowledge and
+              skills in various areas, including UI/UX design. I'm excited to
+              dive deeper into the subject and explore how to create intuitive
+              and user-friendly digital experiences.
+            </p>
+            <div class="btn-group">
+              <a
+                href="https://drive.google.com/file/d/1TfyEdpqmJHgBk4LrZtGzSuHff6mxwBNO/view?usp=sharing"
+                class="btn active"
+                >Download CV</a
+              >
+              <a href="contacts.html" class="btn">Contact</a>
+            </div>
+            <div class="social">
+              <a href="https://www.instagram.com/nitindhyani01/?hl=en"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/nitin-dhyani/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/nitindhyani01/"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+      var togglebtn = document.querySelector(".togglebtn");
+      var nav = document.querySelector(".navlinks");
+      var links = document.querySelector(".navlinks li");
+
+      togglebtn.addEventListener("click", function () {
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+      });
+
+      var typed = new Typed(".input", {
+        strings: ["Lerner", "Developer", "Curious"],
+        typedSpeed: 5,
+        backSpeed: 95,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
