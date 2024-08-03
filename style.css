@@ -225,7 +225,6 @@ nav .navlinks li a {
   width: 30%;
   height: 20.5rem;
   display: flex;
-  flex-direction: column;
   box-shadow: 2px 2px #9ecaed;
   transition: 0.3s;
   margin: 5px;
@@ -243,6 +242,10 @@ nav .navlinks li a {
   height: 100%;
   border-radius: 10px 10px 0 0;
 }
+.heading {
+  color: #007ced;
+  padding: 2px;
+}
 .project-desc {
   width: 100%;
   height: 50%;
@@ -256,6 +259,14 @@ nav .navlinks li a {
 }
 @media (max-width: 930px) {
   .project-container {
-    flex-direction: column;
+    flex-direction: row;
+  }
+  .project-div {
+    width: 80%;
+    height: 10.5rem;
+    flex-direction: row;
+  }
+  .project-img {
+    display: none;
   }
 }
