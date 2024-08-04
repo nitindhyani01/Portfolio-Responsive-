@@ -38,9 +38,20 @@
           </nav>
         </header>
       </div>
-      <div class="project-container"></div>
+      <form class="contacts-form" onsubmit="sendmail(); reset(); return false;">
+        <span>Contact Me</span>
+        <input class="input-msg" type="text" placeholder="Name" id="name" />
+        <input class="input-msg" type="email" placeholder="Email" id="mail" />
+        <textarea
+          class="message"
+          placeholder="Write your message here"
+          name="Message"
+          id="msg"
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
     </div>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
     <script>
       var togglebtn = document.querySelector(".togglebtn");
@@ -51,6 +62,19 @@
         this.classList.toggle("click");
         nav.classList.toggle("open");
       });
+      function sendmail() {
+        Email.send({
+          SecureToken: "4f0dcc84-d5d9-4756-a2a9-29f070df0165",
+          To: "nitindhyani@sgtbimit.com",
+          From: "nitindhyani@sgtbimit.com",
+          Subject: "subject",
+          Body:
+            "Name" +
+            document.getElementById("name") +
+            "<br>" +
+            document.getElementById("msg").value,
+        }).then((message) => alert("Message sent successfully"));
+      }
     </script>
   </body>
 </html>

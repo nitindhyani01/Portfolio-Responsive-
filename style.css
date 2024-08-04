@@ -43,12 +43,12 @@ header {
   font-weight: 700;
   font-size: 1.5rem;
   padding: 10px;
-  margin-right: 5px;
+  margin-right: 4px;
   cursor: pointer;
 }
 .logo,
 .logo-text {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 500;
   color: #fff;
   margin-top: 2px;
@@ -228,6 +228,7 @@ nav .navlinks li a {
   box-shadow: 2px 2px #9ecaed;
   transition: 0.3s;
   margin: 5px;
+  overflow: hidden;
 }
 .project-div:hover {
   transform: scale(1.1);
@@ -269,4 +270,51 @@ nav .navlinks li a {
   .project-img {
     display: none;
   }
+}
+/* contacts.html CSS */
+.contacts-form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts-form span {
+  font-size: 50px;
+  font-weight: 500;
+  color: #e5e5e5;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 20px;
+}
+.input-msg,
+.message {
+  width: 70%;
+  height: 5rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px #a99eede1;
+  padding: 10px;
+  margin: 5px;
+  color: #fff;
+  font-size: 16px;
+}
+.input-msg::placeholder,
+.message::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+.input-msg:focus,
+.message:focus {
+  outline: none;
+}
+.contacts-form button {
+  margin-top: 2rem;
+  background-color: #444;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
 }
