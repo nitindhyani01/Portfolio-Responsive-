@@ -33,7 +33,7 @@
                   >Resume</a
                 >
               </li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="contacts.html">Contact</a></li>
             </ul>
           </nav>
         </header>
@@ -69,9 +69,11 @@
           From: "nitindhyani@sgtbimit.com",
           Subject: "subject",
           Body:
-            "Name" +
-            document.getElementById("name") +
-            "<br>" +
+            "Name : " +
+            document.getElementById("name").value +
+            "<br> Email: " +
+            document.getElementById("mail").value +
+            "<br> message : " +
             document.getElementById("msg").value,
         }).then((message) => alert("Message sent successfully"));
       }
