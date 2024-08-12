@@ -149,10 +149,6 @@ nav .navlinks li a {
   transition: 0.5s;
   overflow: hidden;
 }
-.hero-text .social i:hover {
-  color: #007ced;
-  transform: rotate(360deg);
-}
 @media (max-width: 930px) {
   nav .togglebtn {
     display: initial;
