@@ -146,7 +146,6 @@ nav .navlinks li a {
   color: #e5e5e5;
   font-size: 18px;
   margin-right: 10px;
-  transition: 0.5s;
   overflow: hidden;
 }
 @media (max-width: 930px) {
