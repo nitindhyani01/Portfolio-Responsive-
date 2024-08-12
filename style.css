@@ -147,6 +147,7 @@ nav .navlinks li a {
   font-size: 18px;
   margin-right: 10px;
   transition: 0.5s;
+  overflow: hidden;
 }
 .hero-text .social i:hover {
   color: #007ced;
